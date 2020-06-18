@@ -4,20 +4,54 @@
     <link rel="icon" href="https://discord.com/assets/07dca80a102d4149e9736d4b162cff6f.ico">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./webhookmain.css">
     <title>Discord Webhook Gönderici</title>
-    <style>
-        .container{
-            background-color: #393939;
-        }
-        textarea{
-            resize: none;
-        }
-        .card-panel{
-            background-color: #393939;
-        }
-    </style>
 </head>
+<div class="yuklen">
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+        </div>
+
+        <div class="spinner-layer spinner-red">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+        </div>
+
+        <div class="spinner-layer spinner-yellow">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+        </div>
+
+        <div class="spinner-layer spinner-green">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+        </div>
+    </div>
+</div>
 <body style="background-color: #393939">
+
 <main class="container">
     <div>
         <h1 style="color: #cecece">Discord Webhook</h1>
@@ -32,10 +66,10 @@
         </div>
         <div class="row">
             <div class="input-field s6 col">
-                <input id="webhookusername" type="text" style="color: aliceblue"> <label for="webhookusername" class="">Kullanıcı adı</label>
+                <input id="webhookusername" type="text" style="color: aliceblue"> <label for="webhookusername">Kullanıcı adı</label>
             </div>
             <div class="input-field s6 col">
-                <input id="avatar_url" type="url" style="color: aliceblue"> <label for="avatar_url" class="">Avatar url si</label>
+                <input id="avatar_url" type="url" style="color: aliceblue"> <label for="avatar_url">Avatar url si</label>
             </div>
         </div>
     </div>
@@ -48,6 +82,7 @@
 </main>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<script src="./app.js"></script>
 <script>
     function submit() {
         var url = $("#webhookurl").val();
@@ -58,6 +93,7 @@
         Materialize.toast('Mesaj Gönderildi!', 3000)
     }
 </script>
+
 
 <div class="hiddendiv common"></div><div id="toast-container"></div>
 </body>
